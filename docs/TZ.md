@@ -249,6 +249,8 @@ SQL только через параметризованные запросы / 
   (`core/constants.py` и конфигурация по окружению).
 - Конфигурация через переменные окружения, пример в `.env.example`. **Секреты не коммитятся** (репозиторий публичный).
 - Типизация (mypy/pyright), линтер/форматтер (ruff), pre-commit.
+- Коммиты по спецификации [Conventional Commits 1.0.0](https://www.conventionalcommits.org/en/v1.0.0/)
+  (`feat(ingestion): add MVV GTFS adapter`, `fix(api): ...`, `docs: ...`). Проверка формата в pre-commit/CI (например, commitlint).
 
 ### 7.3 Безопасность и приватность
 - SQL только параметризованный. Валидация входа (Pydantic). Rate limiting API, CORS по списку.
